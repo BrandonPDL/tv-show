@@ -1,0 +1,24 @@
+<button class="AddNc" (click)="openAddModal()">Agregar Nuevo Canal</button>
+<div class="Channels">
+<div *ngFor="let channel of channels$ | async" class="Channel">
+  <div>
+    <p>{{ channel.name }}</p>
+  </div>
+  <div>
+    <button (click)="openEditModal(channel)">Editar</button>
+    <button (click)="deleteTvShow(channel.id)">Eliminar</button>
+  </div>
+
+</div>
+
+<app-tv-show-edit *ngIf="selectedTvShow" 
+                  [tvShow]="selectedTvShow" 
+                  (update)="updateTvShow($event)" 
+                  (close)="closeEditModal()">
+</app-tv-show-edit>
+
+<app-tv-show-add *ngIf="isAddMode"
+                 (add)="addTvShow($event)"
+                 (close)="closeAddModal()">
+</app-tv-show-add>
+</div>

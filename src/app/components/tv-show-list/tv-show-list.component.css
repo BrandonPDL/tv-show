@@ -1,0 +1,61 @@
+.carousel {
+    max-width: 80vw;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  
+  .carousel-track-container {
+    display: flex;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .carousel-track {
+    display: flex;
+    flex-wrap: nowrap; 
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 16px; 
+    border: 1px solid #ccc;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+  }
+  
+  .carousel-content {
+    padding: 16px;
+  }
+  
+
+  .tv-show-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .dark-mode .tv-show-item {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #a1063c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #94021f;
+  }
+  

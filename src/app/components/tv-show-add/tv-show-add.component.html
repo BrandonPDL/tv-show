@@ -1,0 +1,19 @@
+<div class="modal" [ngClass]="{'dark-mode': isDarkMode$ | async}">
+  <div class="modal-content">
+    <h2>Agregar Nuevo Canal</h2>
+    <form [formGroup]="form" (ngSubmit)="onSave()">
+      <div>
+        <label for="name">Nombre:</label>
+        <input id="name" formControlName="name" />
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" formControlName="favorite" />
+          Favorito
+        </label>
+      </div>
+      <button type="submit">Guardar</button>
+      <button type="button" (click)="onClose()">Cancelar</button>
+    </form>
+  </div>
+</div>

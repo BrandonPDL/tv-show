@@ -1,0 +1,14 @@
+<div class="carousel">
+  <div class="carousel-track-container">
+    <div class="carousel-track" #carouselTrack>
+      <div class="carousel-item" *ngFor="let tvShow of favoriteTvShows$ | async">
+        <div class="carousel-content">
+          <h3>{{ tvShow.name }}</h3>
+          <div>
+            <button (click)="removeFavorite(tvShow)">Quitar de Favoritos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

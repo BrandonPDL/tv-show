@@ -1,0 +1,30 @@
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .modal-content {
+  background-color: #333333;
+  color: #ffffff;
+}
+  
+  .Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .Header h1{
+    font-size: 3rem;
+  }
+  .Header b{
+    color: rgb(228, 19, 19);
+  }
+
+  .Body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+

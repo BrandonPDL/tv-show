@@ -1,0 +1,77 @@
+/* Estilos base */
+.Channel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(184, 184, 184);
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: ease .5s;
+}
+
+.Channels {
+    display: flex;
+    width: 1200px;
+    max-width: 1200px;
+    height: 60vh;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.AddNc {
+    background-color: rgb(0, 68, 255);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 1024px) {
+    .Channels {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Channel {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Smartphones y dispositivos pequeños */
+@media (max-width: 768px) {
+    .Channels {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Channel {
+        height: 100px;
+    }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 480px) {
+    .Channels {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Channel {
+        height: 80px;
+        margin: 5px;
+    }
+}

@@ -1,0 +1,27 @@
+
+html{
+     display: 100%;
+     max-height: 550vh;
+      background-size: cover;
+      position: relative;
+      transition: ease .5s;
+   }
+
+
+
+html.dark-mode, body.dark-mode {
+    background-color: #333;
+    color: white;
+    transition: ease .5s;
+  }
+  
+  
+  .dark-mode .modal-content {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  .dark-mode-channel {
+    background-color: #141313 !important;
+    transition: ease .5s;
+}
